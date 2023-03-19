@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Chairs",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-01.jpg",
+        "slug": "chairs"
+    },
+    {
+        "name": "Sofas",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-02.jpg",
+        "slug": "sofas"
+    },
+    {
+        "name": "Lamps",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-06.jpg",
+        "slug": "lamps"
+    },
+    {
+        "name": "Tables",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-05.jpg",
+        "slug": "tables"
+    },
+    {
+        "name": "Decor",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-04.jpg",
+        "slug": "decor"
+    },
+    {
+        "name": "Pendants",
+        "image": "https://eskil.qodeinteractive.com/wp-content/uploads/2022/03/shop-cat-03.jpg",
+        "slug": "pendants"
+    }
+]
