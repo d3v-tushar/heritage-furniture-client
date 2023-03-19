@@ -1,14 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import { useState } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { Routes } from './routes/Routes';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div>
-     <Navbar/>
-    </div>
+     <div>
+      <RouterProvider router={Routes}></RouterProvider>
+     </div>
   );
 }
 

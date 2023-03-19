@@ -3,6 +3,7 @@ import { MdDashboardCustomize } from "react-icons/md";
 
 // Headless UI, for more info and examples you can check out https://github.com/tailwindlabs/headlessui
 import { Menu, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -12,21 +13,21 @@ export default function Navbar() {
       {/* Page Container */}
       <div
         id="page-container"
-        className="flex flex-col mx-auto w-full min-h-screen min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-900"
+        className="sticky top-0 z-50 flex flex-col mx-auto w-full min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-900"
       >
         {/* Page Header */}
         <header
           id="page-header"
           className="flex flex-none items-center bg-white shadow-sm z-1 dark:bg-gray-800"
         >
-          <div className="container xl:max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="container w-full lg:w-11/12 mx-auto px-4 lg:px-0">
             <div className="flex justify-between py-4">
               {/* Left Section */}
               <div className="flex items-center">
                 {/* Logo */}
                 <a
                   href="/"
-                  className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-700 hover:text-blue-600 active:text-gray-700 dark:font-semibold dark:text-gray-200 dark:hover:text-blue-400 dark:active:text-gray-200"
+                  className="group inline-flex items-center space-x-2 font-bold text-xl tracking-wide text-gray-700 hover:text-blue-600 active:text-gray-700 dark:font-semibold dark:text-gray-200 dark:hover:text-blue-400 dark:active:text-gray-200"
                 >
                   <svg
                     className="hi-mini hi-cube-transparent inline-block w-5 h-5 text-blue-600 transition group-hover:scale-110 dark:text-blue-400"
@@ -41,7 +42,7 @@ export default function Navbar() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Company</span>
+                  <span>Heritage Furniture</span>
                 </a>
                 {/* END Logo */}
               </div>
@@ -70,13 +71,13 @@ export default function Navbar() {
                     </svg>
                     <span>Home</span>
                   </a>
-                  <a
-                    href="/"
+                  <Link
+                    to='/login'
                     className="group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100 dark:text-gray-100 dark:hover:text-blue-100 dark:hover:bg-blue-500 dark:hover:bg-opacity-20 dark:active:border-blue-500 dark:active:border-opacity-25"
                   >
                     <MdDashboardCustomize className="text-xl text-gray-400 group-hover:text-blue-600" />
                     <span>Dashboard</span>
-                  </a>
+                  </Link>
                 </nav>
                 {/* END Desktop Navigation */}
 
@@ -311,13 +312,13 @@ export default function Navbar() {
                   </svg>
                   <span>Home</span>
                 </a>
-                <a
-                  href="/"
+                <Link
+                  to='/login'
                   className="group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100 dark:text-gray-100 dark:hover:text-blue-100 dark:hover:bg-blue-500 dark:hover:bg-opacity-20 dark:active:border-blue-500 dark:active:border-opacity-25"
                 >
                   <MdDashboardCustomize className="text-xl text-gray-400 group-hover:text-blue-600" />
                   <span>Dashboard</span>
-                </a>
+                </Link>
               </nav>
             </div>
             {/* END Mobile Navigation */}
